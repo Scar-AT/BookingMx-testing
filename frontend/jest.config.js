@@ -1,6 +1,8 @@
 export default {
+  transform: {
+    "^.+\\.js$": "babel-jest"
+  },
   testEnvironment: "node",
-  collectCoverage: true,
-  collectCoverageFrom: ["js/**/*.js"],
-  coverageReporters: ["text", "lcov"]
+  roots: ["<rootDir>/tests/"],
+  moduleFileExtensions: ["js"],
 };

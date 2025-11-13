@@ -1,57 +1,66 @@
 ########################
-# Maven / Java
+# Java / Maven (backend)
 ########################
-target/
+backend/target/
 *.class
 *.jar
 *.war
 *.ear
-*.iml
 *.log
-hs_err_pid*
-replay_pid*
+backend/hs_err_pid*
+backend/replay_pid*
 
 ########################
 # JaCoCo reports
 ########################
-*.exec
-target/site/jacoco/
+backend/target/site/jacoco/
+backend/target/jacoco.exec
 
 ########################
-# IntelliJ IDEA
+# Node / Frontend
+########################
+frontend/node_modules/
+frontend/coverage/
+frontend/dist/
+frontend/.cache/
+frontend/.vite/
+frontend/build/
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+########################
+# Jest
+########################
+frontend/coverage/
+frontend/.jest/
+
+########################
+# Editor / IDE
 ########################
 .idea/
+.vscode/
+*.iml
 *.iws
 *.ipr
-*.iml
 out/
 shelf/
 workspace.xml
+httpRequests/
+dataSources/
+dataSources.local.xml
 
 ########################
-# VS Code
-########################
-.vscode/
-
-########################
-# OS / Editor Trash
+# OS / System Files
 ########################
 .DS_Store
 Thumbs.db
 *.tmp
 
 ########################
-# Node (for Sprint 2 frontend testing)
+# Misc
 ########################
-frontend/node_modules/
-frontend/dist/
-npm-debug.log
-yarn-error.log
-pnpm-debug.log
-
-########################
-# HTTP client auto files
-########################
-httpRequests/
-dataSources/
-dataSources.local.xml
+.env
+.env.local
+.env.*.local
