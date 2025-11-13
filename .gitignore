@@ -1,0 +1,57 @@
+########################
+# Maven / Java
+########################
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+hs_err_pid*
+replay_pid*
+
+########################
+# JaCoCo reports
+########################
+*.exec
+target/site/jacoco/
+
+########################
+# IntelliJ IDEA
+########################
+.idea/
+*.iws
+*.ipr
+*.iml
+out/
+shelf/
+workspace.xml
+
+########################
+# VS Code
+########################
+.vscode/
+
+########################
+# OS / Editor Trash
+########################
+.DS_Store
+Thumbs.db
+*.tmp
+
+########################
+# Node (for Sprint 2 frontend testing)
+########################
+frontend/node_modules/
+frontend/dist/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+########################
+# HTTP client auto files
+########################
+httpRequests/
+dataSources/
+dataSources.local.xml
